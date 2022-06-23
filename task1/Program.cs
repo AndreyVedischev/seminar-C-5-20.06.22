@@ -2,8 +2,9 @@
 using static System.Console;
 Clear();
 
-int[] array = GetRandomArray(12, -9, 9);
+int[] array = GetRandomArray(12, -1, 1);
 WriteLine($"[{String.Join(",",array)}]");
+WriteLine($"Сумма отр эл = {GetNegativeSum(array)} , Сумма пол эл = {GetPositiveSum(array)}");
 
 int[] GetRandomArray(int size, int minValue, int maxValue)
 {
