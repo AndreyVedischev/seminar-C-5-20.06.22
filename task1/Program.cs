@@ -24,3 +24,13 @@ int GetPositiveSum(int[] array)
     }
     return sum;
 }
+
+int GetNegativeSum(int[] array)
+{
+    int sum = 0;
+    for(int i = 0; i< array.Length; i++)
+    {
+        sum+= array[i]<0?array[i]:0; 
+    }
+    return sum;
+}
