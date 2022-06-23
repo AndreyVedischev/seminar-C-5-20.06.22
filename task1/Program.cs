@@ -2,7 +2,11 @@
 using static System.Console;
 Clear();
 
-int[] array = GetRandomArray(12, -1, 1);
+// int length = int.Parse(ReadLine());
+// int min = int.Parse(ReadLine());
+// int max = int.Parse(ReadLine());
+ 
+int[] array = GetRandomArray(12, -1, 1); //GetRandomArray(length, min, max)
 WriteLine($"[{String.Join(",",array)}]");
 WriteLine($"Сумма отр эл = {GetNegativeSum(array)} , Сумма пол эл = {GetPositiveSum(array)}");
 
