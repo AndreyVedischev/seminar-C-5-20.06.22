@@ -18,7 +18,7 @@ int[] GetRandomArray(int size, int minValue, int maxValue)
     return result;
 }
 
-int[] MultiNumber(int size)
+int[] MultiNumber(int size) // не законченное решение
 {
     int result = 0;
     for(int i = 0; i < size; i++)
