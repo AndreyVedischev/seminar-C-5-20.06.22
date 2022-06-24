@@ -21,10 +21,11 @@ int[] GetArrayFromString(string arrayStr)
 int[] MultiPair(int[] array)
 {
     int[] result = new int[array.Length % 2 == 0?array.Length/2:array.Length/2+1];
-    for(int i = 0; i < array.Length % 2 == 0?result.Length : result.Length - 1; i++)
+    for(int i = 0; i < (array.Length % 2 == 0?result.Length : result.Length - 1); i++)
     {
         result[i] = array[i]*array[array.Length - 1];
     }
+    if((array.Length/2) !=0) result[result.Length - 1] = array[array.Length/2];
     return result;
 
 }
